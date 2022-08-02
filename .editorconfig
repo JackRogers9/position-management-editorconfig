@@ -1,8 +1,4 @@
-﻿# Remove the line below if you want to inherit .editorconfig settings from higher directories
-root = true
-
-
-[*]
+﻿[*]
 charset = utf-8-bom
 end_of_line = crlf
 trim_trailing_whitespace = false
@@ -12,11 +8,11 @@ indent_size = 4
 tab_width = 4
 
 # Protobuf and JSON files
-[{*.proto,*.json}]
+[{../*.proto,../*.json}]
 indent_size = 2
 
 # C# files
-[*.cs]
+[../*.cs]
 
 #### Core EditorConfig Options ####
 
